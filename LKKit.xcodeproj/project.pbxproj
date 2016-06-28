@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070FD5EE1D07F584000885D9 /* LKMMapFileCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5E11D07F584000885D9 /* LKMMapFileCache.swift */; };
+		070FD5F01D07F584000885D9 /* LKVideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5E41D07F584000885D9 /* LKVideoAsset.swift */; };
+		070FD5F11D07F584000885D9 /* LKVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5E51D07F584000885D9 /* LKVideoPlayer.swift */; };
+		070FD5F21D07F584000885D9 /* LKVideoPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5E61D07F584000885D9 /* LKVideoPlayerItem.swift */; };
+		070FD5F31D07F584000885D9 /* LKFileDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5E81D07F584000885D9 /* LKFileDownloader.swift */; };
+		070FD5F81D07F5E3000885D9 /* LKCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5F71D07F5E3000885D9 /* LKCore.swift */; };
+		070FD5FD1D07F6A2000885D9 /* LKObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5FC1D07F6A2000885D9 /* LKObjc.m */; };
+		070FD5FF1D08066B000885D9 /* LKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD5FE1D08066B000885D9 /* LKLog.swift */; };
+		070FD6061D0CFC88000885D9 /* LKNormalVideoViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD6031D0CFC88000885D9 /* LKNormalVideoViewControler.swift */; };
+		070FD6071D0CFC88000885D9 /* LKVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD6041D0CFC88000885D9 /* LKVideoView.swift */; };
+		070FD6081D0CFC88000885D9 /* LKVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD6051D0CFC88000885D9 /* LKVideoViewController.swift */; };
+		070FD60A1D0CFCFD000885D9 /* LKContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD6091D0CFCFD000885D9 /* LKContentView.swift */; };
+		070FD60C1D0CFE09000885D9 /* LKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD60B1D0CFE09000885D9 /* LKViewController.swift */; };
+		070FD60E1D0D0D2F000885D9 /* LKOrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD60D1D0D0D2F000885D9 /* LKOrientationManager.swift */; };
+		070FD6101D0D20DE000885D9 /* LKUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD60F1D0D20DE000885D9 /* LKUtility.swift */; };
+		070FD6131D0D41A2000885D9 /* LKVideoViewControllerPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FD6121D0D41A2000885D9 /* LKVideoViewControllerPresentAnimator.swift */; };
+		07360C3A1D1A240F00740C62 /* LKLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07360C391D1A240F00740C62 /* LKLayoutManager.swift */; };
+		07360C3C1D1A244000740C62 /* LKLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07360C3B1D1A244000740C62 /* LKLayoutView.swift */; };
+		07360C3E1D1A24CE00740C62 /* LKLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07360C3D1D1A24CE00740C62 /* LKLayoutAttributes.swift */; };
+		07808E2B1D1B933300A6B4B5 /* LKVideoPlayerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07808E2A1D1B933300A6B4B5 /* LKVideoPlayerDemoViewController.m */; };
+		07808E2D1D1B939000A6B4B5 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07808E2C1D1B939000A6B4B5 /* DemoViewController.swift */; };
+		07808E2F1D1BBB1200A6B4B5 /* LKLayoutDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07808E2E1D1BBB1200A6B4B5 /* LKLayoutDemoViewController.swift */; };
+		07808E5F1D20CC9C00A6B4B5 /* LKLayoutConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07808E5E1D20CC9C00A6B4B5 /* LKLayoutConfig.swift */; };
+		07CC9CDA1D12896800AF2B1F /* LKKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CC9CD91D12896800AF2B1F /* LKKit.m */; };
+		07FE77681D0177DC00690776 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FE77671D0177DC00690776 /* main.m */; };
+		07FE776B1D0177DD00690776 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FE776A1D0177DC00690776 /* AppDelegate.m */; };
+		07FE77761D0177DD00690776 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FE77751D0177DD00690776 /* Assets.xcassets */; };
+		07FE77A11D01863100690776 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FE77A01D01863100690776 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		070FD5E11D07F584000885D9 /* LKMMapFileCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKMMapFileCache.swift; sourceTree = "<group>"; };
+		070FD5E41D07F584000885D9 /* LKVideoAsset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKVideoAsset.swift; sourceTree = "<group>"; };
+		070FD5E51D07F584000885D9 /* LKVideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKVideoPlayer.swift; sourceTree = "<group>"; };
+		070FD5E61D07F584000885D9 /* LKVideoPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKVideoPlayerItem.swift; sourceTree = "<group>"; };
+		070FD5E81D07F584000885D9 /* LKFileDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKFileDownloader.swift; sourceTree = "<group>"; };
+		070FD5F71D07F5E3000885D9 /* LKCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKCore.swift; sourceTree = "<group>"; };
+		070FD5FB1D07F6A2000885D9 /* LKObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKObjc.h; sourceTree = "<group>"; };
+		070FD5FC1D07F6A2000885D9 /* LKObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKObjc.m; sourceTree = "<group>"; };
+		070FD5FE1D08066B000885D9 /* LKLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLog.swift; sourceTree = "<group>"; };
+		070FD6031D0CFC88000885D9 /* LKNormalVideoViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKNormalVideoViewControler.swift; sourceTree = "<group>"; };
+		070FD6041D0CFC88000885D9 /* LKVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKVideoView.swift; sourceTree = "<group>"; };
+		070FD6051D0CFC88000885D9 /* LKVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKVideoViewController.swift; sourceTree = "<group>"; };
+		070FD6091D0CFCFD000885D9 /* LKContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKContentView.swift; sourceTree = "<group>"; };
+		070FD60B1D0CFE09000885D9 /* LKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKViewController.swift; sourceTree = "<group>"; };
+		070FD60D1D0D0D2F000885D9 /* LKOrientationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKOrientationManager.swift; sourceTree = "<group>"; };
+		070FD60F1D0D20DE000885D9 /* LKUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKUtility.swift; sourceTree = "<group>"; };
+		070FD6121D0D41A2000885D9 /* LKVideoViewControllerPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKVideoViewControllerPresentAnimator.swift; sourceTree = "<group>"; };
+		07360C391D1A240F00740C62 /* LKLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLayoutManager.swift; sourceTree = "<group>"; };
+		07360C3B1D1A244000740C62 /* LKLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLayoutView.swift; sourceTree = "<group>"; };
+		07360C3D1D1A24CE00740C62 /* LKLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLayoutAttributes.swift; sourceTree = "<group>"; };
+		07808E291D1B933300A6B4B5 /* LKVideoPlayerDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKVideoPlayerDemoViewController.h; sourceTree = "<group>"; };
+		07808E2A1D1B933300A6B4B5 /* LKVideoPlayerDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKVideoPlayerDemoViewController.m; sourceTree = "<group>"; };
+		07808E2C1D1B939000A6B4B5 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		07808E2E1D1BBB1200A6B4B5 /* LKLayoutDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLayoutDemoViewController.swift; sourceTree = "<group>"; };
+		07808E5E1D20CC9C00A6B4B5 /* LKLayoutConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LKLayoutConfig.swift; sourceTree = "<group>"; };
+		07CC9CD81D12896800AF2B1F /* LKKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKKit.h; sourceTree = "<group>"; };
+		07CC9CD91D12896800AF2B1F /* LKKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKKit.m; sourceTree = "<group>"; };
+		07FE77631D0177DC00690776 /* LKKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FE77671D0177DC00690776 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07FE77691D0177DC00690776 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07FE776A1D0177DC00690776 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07FE77751D0177DD00690776 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07FE777A1D0177DD00690776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07FE779B1D01810300690776 /* LKKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKKit-Bridging-Header.h"; sourceTree = "<group>"; };
+		07FE77A01D01863100690776 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07FE77601D0177DC00690776 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070FD5DF1D07F584000885D9 /* LKKit */ = {
+			isa = PBXGroup;
+			children = (
+				070FD5F61D07F5E3000885D9 /* Base */,
+				070FD5E01D07F584000885D9 /* Cache */,
+				070FD5E31D07F584000885D9 /* Media */,
+				070FD5E71D07F584000885D9 /* Network */,
+				070FD5E91D07F584000885D9 /* UI */,
+			);
+			path = LKKit;
+			sourceTree = "<group>";
+		};
+		070FD5E01D07F584000885D9 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				070FD5E11D07F584000885D9 /* LKMMapFileCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		070FD5E31D07F584000885D9 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				070FD5E41D07F584000885D9 /* LKVideoAsset.swift */,
+				070FD5E51D07F584000885D9 /* LKVideoPlayer.swift */,
+				070FD5E61D07F584000885D9 /* LKVideoPlayerItem.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		070FD5E71D07F584000885D9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				070FD5E81D07F584000885D9 /* LKFileDownloader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		070FD5E91D07F584000885D9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				07360C381D1A23FA00740C62 /* Layout */,
+				070FD6111D0D418D000885D9 /* Animator */,
+				070FD6021D0CFC88000885D9 /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		070FD5F61D07F5E3000885D9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				070FD5F71D07F5E3000885D9 /* LKCore.swift */,
+				070FD5FB1D07F6A2000885D9 /* LKObjc.h */,
+				070FD5FC1D07F6A2000885D9 /* LKObjc.m */,
+				070FD5FE1D08066B000885D9 /* LKLog.swift */,
+				070FD60D1D0D0D2F000885D9 /* LKOrientationManager.swift */,
+				070FD60F1D0D20DE000885D9 /* LKUtility.swift */,
+				07CC9CD81D12896800AF2B1F /* LKKit.h */,
+				07CC9CD91D12896800AF2B1F /* LKKit.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		070FD6021D0CFC88000885D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				070FD6031D0CFC88000885D9 /* LKNormalVideoViewControler.swift */,
+				070FD6041D0CFC88000885D9 /* LKVideoView.swift */,
+				070FD6091D0CFCFD000885D9 /* LKContentView.swift */,
+				070FD60B1D0CFE09000885D9 /* LKViewController.swift */,
+				070FD6051D0CFC88000885D9 /* LKVideoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		070FD6111D0D418D000885D9 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				070FD6121D0D41A2000885D9 /* LKVideoViewControllerPresentAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		07360C381D1A23FA00740C62 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				07360C391D1A240F00740C62 /* LKLayoutManager.swift */,
+				07360C3B1D1A244000740C62 /* LKLayoutView.swift */,
+				07360C3D1D1A24CE00740C62 /* LKLayoutAttributes.swift */,
+				07808E5E1D20CC9C00A6B4B5 /* LKLayoutConfig.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		07FE775A1D0177DC00690776 = {
+			isa = PBXGroup;
+			children = (
+				07FE779B1D01810300690776 /* LKKit-Bridging-Header.h */,
+				070FD5DF1D07F584000885D9 /* LKKit */,
+				07FE77651D0177DC00690776 /* Demo */,
+				07FE77641D0177DC00690776 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07FE77641D0177DC00690776 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07FE77631D0177DC00690776 /* LKKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07FE77651D0177DC00690776 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				07FE77691D0177DC00690776 /* AppDelegate.h */,
+				07FE776A1D0177DC00690776 /* AppDelegate.m */,
+				07FE77751D0177DD00690776 /* Assets.xcassets */,
+				07FE777A1D0177DD00690776 /* Info.plist */,
+				07FE77661D0177DC00690776 /* Supporting Files */,
+				07FE77A01D01863100690776 /* Main.storyboard */,
+				07808E291D1B933300A6B4B5 /* LKVideoPlayerDemoViewController.h */,
+				07808E2A1D1B933300A6B4B5 /* LKVideoPlayerDemoViewController.m */,
+				07808E2C1D1B939000A6B4B5 /* DemoViewController.swift */,
+				07808E2E1D1BBB1200A6B4B5 /* LKLayoutDemoViewController.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		07FE77661D0177DC00690776 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07FE77671D0177DC00690776 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07FE77621D0177DC00690776 /* LKKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FE777D1D0177DD00690776 /* Build configuration list for PBXNativeTarget "LKKit" */;
+			buildPhases = (
+				07FE775F1D0177DC00690776 /* Sources */,
+				07FE77601D0177DC00690776 /* Frameworks */,
+				07FE77611D0177DC00690776 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LKKit;
+			productName = QZVideoSDK;
+			productReference = 07FE77631D0177DC00690776 /* LKKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07FE775B1D0177DC00690776 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = lingtonke;
+				TargetAttributes = {
+					07FE77621D0177DC00690776 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6ZW3J2GDSH;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 07FE775E1D0177DC00690776 /* Build configuration list for PBXProject "LKKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07FE775A1D0177DC00690776;
+			productRefGroup = 07FE77641D0177DC00690776 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07FE77621D0177DC00690776 /* LKKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07FE77611D0177DC00690776 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FE77A11D01863100690776 /* Main.storyboard in Resources */,
+				07FE77761D0177DD00690776 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07FE775F1D0177DC00690776 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070FD5FD1D07F6A2000885D9 /* LKObjc.m in Sources */,
+				07CC9CDA1D12896800AF2B1F /* LKKit.m in Sources */,
+				070FD6131D0D41A2000885D9 /* LKVideoViewControllerPresentAnimator.swift in Sources */,
+				07360C3A1D1A240F00740C62 /* LKLayoutManager.swift in Sources */,
+				07808E5F1D20CC9C00A6B4B5 /* LKLayoutConfig.swift in Sources */,
+				07FE776B1D0177DD00690776 /* AppDelegate.m in Sources */,
+				070FD6071D0CFC88000885D9 /* LKVideoView.swift in Sources */,
+				070FD6101D0D20DE000885D9 /* LKUtility.swift in Sources */,
+				070FD6061D0CFC88000885D9 /* LKNormalVideoViewControler.swift in Sources */,
+				070FD60A1D0CFCFD000885D9 /* LKContentView.swift in Sources */,
+				070FD5F01D07F584000885D9 /* LKVideoAsset.swift in Sources */,
+				07360C3C1D1A244000740C62 /* LKLayoutView.swift in Sources */,
+				070FD60C1D0CFE09000885D9 /* LKViewController.swift in Sources */,
+				070FD5F21D07F584000885D9 /* LKVideoPlayerItem.swift in Sources */,
+				070FD5FF1D08066B000885D9 /* LKLog.swift in Sources */,
+				070FD5EE1D07F584000885D9 /* LKMMapFileCache.swift in Sources */,
+				07808E2D1D1B939000A6B4B5 /* DemoViewController.swift in Sources */,
+				07808E2F1D1BBB1200A6B4B5 /* LKLayoutDemoViewController.swift in Sources */,
+				070FD6081D0CFC88000885D9 /* LKVideoViewController.swift in Sources */,
+				07808E2B1D1B933300A6B4B5 /* LKVideoPlayerDemoViewController.m in Sources */,
+				070FD60E1D0D0D2F000885D9 /* LKOrientationManager.swift in Sources */,
+				070FD5F81D07F5E3000885D9 /* LKCore.swift in Sources */,
+				07360C3E1D1A24CE00740C62 /* LKLayoutAttributes.swift in Sources */,
+				070FD5F31D07F584000885D9 /* LKFileDownloader.swift in Sources */,
+				070FD5F11D07F584000885D9 /* LKVideoPlayer.swift in Sources */,
+				07FE77681D0177DC00690776 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		07FE777B1D0177DD00690776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LKKit-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07FE777C1D0177DD00690776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "LKKit-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07FE777E1D0177DD00690776 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lingtonke.LZKit;
+				PRODUCT_NAME = LKKit;
+				SWIFT_OBJC_BRIDGING_HEADER = "LKKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		07FE777F1D0177DD00690776 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lingtonke.LZKit;
+				PRODUCT_NAME = LKKit;
+				SWIFT_OBJC_BRIDGING_HEADER = "LKKit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07FE775E1D0177DC00690776 /* Build configuration list for PBXProject "LKKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FE777B1D0177DD00690776 /* Debug */,
+				07FE777C1D0177DD00690776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FE777D1D0177DD00690776 /* Build configuration list for PBXNativeTarget "LKKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FE777E1D0177DD00690776 /* Debug */,
+				07FE777F1D0177DD00690776 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07FE775B1D0177DC00690776 /* Project object */;
+}

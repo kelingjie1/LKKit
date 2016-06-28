@@ -65,6 +65,8 @@ public class LKLayoutAttributes : NSObject
     var widthMode = LKLayoutWidthMode.DividedEqually
     var heightMode = LKLayoutHeightMode.VariableAccodingItemSize
     var autoAdjustSize = true
+    var horizontalAlignment = LKLayoutHorizontalAlignment.Left
+    var verticalAlignment = LKLayoutVerticalAlignment.Top
     
     //customWidth
     var fullWidthMultiplier : CGFloat = 0;
@@ -450,7 +452,7 @@ public class LKLayoutAttributes : NSObject
                 case LKLayoutHeightMode.Custom:
                     block.frame.height = block.fullHeightMultiplier*fullHeight+block.restHeightMultiplier*restHeight+block.heightConstant
                 case LKLayoutHeightMode.VariableAccodingItemSize:
-                    break
+                    block.layoutWithHeight()
                 default:
                     break
                 }
@@ -479,8 +481,11 @@ public class LKLayoutAttributes : NSObject
                 {
                     block.frame.height = self.internalHeight
                 }
+                if block.heightMode != LKLayoutHeightMode.VariableAccodingItemSize
+                {
+                    block.layoutWithHeight()
+                }
                 
-                block.layoutWithHeight()
             }
 
         }
@@ -519,8 +524,32 @@ public class LKLayoutAttributes : NSObject
             for i in 0..<self.blockList.count
             {
                 let block = self.blockList[i]
-                block.frame.left = self.frame.left + self.edgeInsets.left
-                block.frame.top = y
+                
+                switch block.horizontalAlignment
+                {
+                case LKLayoutHorizontalAlignment.Left:
+                    block.frame.left = self.frame.left + self.edgeInsets.left
+                case LKLayoutHorizontalAlignment.Middle:
+                    block.frame.centerX = self.frame.left + self.edgeInsets.left + block.frame.width/2
+                case LKLayoutHorizontalAlignment.Right:
+                    block.frame.right = self.frame.left + self.edgeInsets.left + block.frame.width
+                }
+                
+                
+                switch block.verticalAlignment
+                {
+                case LKLayoutVerticalAlignment.Top:
+                    block.frame.top = y
+                case LKLayoutVerticalAlignment.Middle:
+                    block.frame.centerY = y + self.internalHeight/2
+                case LKLayoutVerticalAlignment.Bottom:
+                    block.frame.bottom = y + self.internalHeight
+                }
+
+                
+                
+                
+                
                 if !block.hidden
                 {
                     y += block.frame.height+self.interBlockSpacingList[i]
@@ -530,12 +559,32 @@ public class LKLayoutAttributes : NSObject
         }
         else if direction == LKLayoutDirection.Horizontal
         {
-            var x = self.edgeInsets.left
+            var x = self.frame.left + self.edgeInsets.left
             for i in 0..<self.blockList.count
             {
                 let block = self.blockList[i]
-                block.frame.left = x+self.frame.left
-                block.frame.top = self.edgeInsets.top+self.frame.top
+                switch block.horizontalAlignment
+                {
+                case LKLayoutHorizontalAlignment.Left:
+                    block.frame.left = x
+                case LKLayoutHorizontalAlignment.Middle:
+                    block.frame.centerX = x + block.frame.width/2
+                case LKLayoutHorizontalAlignment.Right:
+                    block.frame.right = x + block.frame.width
+                }
+                
+                switch block.verticalAlignment
+                {
+                case LKLayoutVerticalAlignment.Top:
+                    block.frame.top = self.edgeInsets.top + self.frame.top
+                case LKLayoutVerticalAlignment.Middle:
+                    block.frame.centerY = self.edgeInsets.top + self.frame.top + self.internalHeight/2
+                case LKLayoutVerticalAlignment.Bottom:
+                    block.frame.bottom = self.edgeInsets.top + self.frame.top + self.internalHeight
+                }
+                
+                
+                
                 if !block.hidden
                 {
                     x += block.frame.width + self.interBlockSpacingList[i]

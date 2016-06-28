@@ -183,6 +183,15 @@ class LKLayoutDemoViewController: UIViewController
         block5.heightMode = LKLayoutHeightMode.Custom
         block5.heightConstant = 40
         
+        let block6 = LKLayoutAttributes("animation2Button")
+        layoutAttributes.append(block6)
+        block6.item = LKLayoutItemAttributes(
+            [
+                LKKVC.ClassType : "UIButton",
+                "backgroundColor":UIColor.lk_randomColor(),
+                LKKVC.ButtonTitle : [UIControlState().rawValue : "animation2"],
+            ])
+        
         layoutView.createView()
         
         self.addHandler()
@@ -197,6 +206,9 @@ class LKLayoutDemoViewController: UIViewController
             
             let addTitleButton = layoutAttributes.viewListForName("addTitleButton").first as! UIButton
             addTitleButton.addTarget(self, action: #selector(addTitleButtonTouch), for: UIControlEvents.touchUpInside)
+            
+            let animation2Button = layoutAttributes.viewListForName("animation2Button").first as! UIButton
+            animation2Button.addTarget(self, action: #selector(animation2ButtonTouch), for: UIControlEvents.touchUpInside)
         }
         
         
@@ -229,6 +241,26 @@ class LKLayoutDemoViewController: UIViewController
         UIView.animate(withDuration: 0.3) {
             self.layoutView.createView()
         }
+    }
+    
+    func animation2ButtonTouch()
+    {
+        let animation2Button = self.layoutView.layoutAttributes!.attributesListForName("animation2Button").first!
+        if animation2Button.superBlock?.name == "Root"
+        {
+            animation2Button.superBlock?.remove(animation2Button)
+            self.layoutView.layoutAttributes!.attributesListForName("block3").first?.insert(animation2Button, index: 1)
+        }
+        else
+        {
+            animation2Button.superBlock?.remove(animation2Button)
+            self.layoutView.layoutAttributes?.append(animation2Button)
+        }
+        UIView.animate(withDuration: 0.3)
+        {
+            self.layoutView.layout()
+        }
+        
     }
 }
 

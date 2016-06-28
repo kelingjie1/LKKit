@@ -174,6 +174,25 @@ public class LKLayoutAttributes : NSObject
         self.interBlockSpacingList.insert(space, at: index)
     }
     
+    func remove(at : Int)
+    {
+        let attributes = self.blockList[at]
+        attributes.superBlock = nil
+        self.blockList.remove(at: at)
+    }
+    
+    func remove(_ attributes : LKLayoutAttributes)
+    {
+        for i in 0..<self.blockList.count
+        {
+            if self.blockList[i] == attributes
+            {
+                self.remove(at: i)
+                break
+            }
+        }
+    }
+    
     
     func createView(_ inView : UIView)
     {
